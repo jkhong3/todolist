@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'tasks/create'
+
+  get 'tasks/update'
+
+  get 'tasks/index'
+
+  get 'tasks/show'
+
+  get 'tasks/destroy'
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

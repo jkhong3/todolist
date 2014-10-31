@@ -1,5 +1,6 @@
+<div class="jumbotron">
+
 <h1>To Do List</h1>
-<p>Find me in app/views/home/index.html.erb</p>
 
 <div class="container">
 	<%= form_for @task, :remote => true, :format => :json do |f| %>
@@ -7,6 +8,18 @@
 			<%= f.label :title %>
 			<%= f.text_field :title , :class => 'form-control' %>
 		</div>
+
+		<div class="control-group">
+			<%= f.label :description %>
+			<%= f.text_field :description , :class => 'form-control' %>
+		</div>
 	 <%= f.submit 'Add Task', :class => "btn btn-success"  %>
 	<% end %>
+
 </div>
+</div>
+
+	<div class="container">
+	  <div id="tasks"></div>
+	</div>
+

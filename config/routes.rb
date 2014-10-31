@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+
+  resources :tasks, only: [:index, :new, :create, :update, :destroy]
+
+  root "home#index"
+
   get 'tasks/create'
 
   get 'tasks/update'
